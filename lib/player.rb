@@ -7,7 +7,11 @@ class Player
   end
 
   def first_name
-    name.first
+    first_name = @name.split(" ").first
+  end
+
+  def last_name
+    last_name = @name.split(" ").last
   end
 
   def total_cost
@@ -15,7 +19,7 @@ class Player
   end
 
   def nickname
-    
+    nickname = nil
 
   end
 end 
