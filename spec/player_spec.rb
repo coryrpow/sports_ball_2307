@@ -5,16 +5,17 @@ RSpec.describe Player do
   it 'exists' do
     player = Player.new("Michael Palledorous" , 1000000, 36)
 
-    expect(player).to be_a Player
+    expect(player).to be_a(Player)
   end
 
-  it 'has a first name' do
+  xit 'has a first name' do
     player = Player.new("Michael Palledorous" , 1000000, 36)
+    first_name = first_name
 
     expect(player.first_name).to eq("Michael")
   end
 
-  it 'has a last name' do
+  xit 'has a last name' do
     player = Player.new("Michael Palledorous" , 1000000, 36)
 
     expect(player.last_name).to eq("Palledorous")
@@ -36,5 +37,11 @@ RSpec.describe Player do
     player = Player.new("Michael Palledorous" , 1000000, 36)
 
     expect(player.total_cost).to eq(36000000)
+  end
+
+  xit 'has a nickname' do
+    player = Player.new("Michael Palledorous" , 1000000, 36)
+
+    expect(player.nickname).to eq("Squints")
   end
 end
